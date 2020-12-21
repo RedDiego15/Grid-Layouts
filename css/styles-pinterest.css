@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,25rem);
+    gap: 0.5rem;
+    justify-content: center;
+}
+.item{
+    border-radius: 5px;
+    padding: 1rem;
+    background: #f2f2f2;
+}
+.item img{
+    max-width: 100%;
+}
+.level-1{
+    grid-row-end: span 3;
+}
+.level-2{
+    grid-row-end: span 2;
+}
+.level-3{
+    grid-row-end: span 1 ;
+}

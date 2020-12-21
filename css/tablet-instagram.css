@@ -1,8 +1,34 @@
+.nav{
+    margin-right: 5rem;
+}
+
 .post-list{
     max-width: 95rem;
     padding: 1rem 2rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,25rem);
+    justify-content: center;
     gap: 0.5rem;
+}
+
+.post-overlay p{
+    font-size: 1.6rem;  
+}
+.post-overlay p:nth-of-type(1){
+    display: flex;
+    margin-right: 3rem;
+    
+}
+.post-overlay .post-likes,
+.post-overlay .post-comments
+{
+    width: 2.6rem;
+    height: 2.6rem;
+    background-repeat: no-repeat;
+    left: 6.3rem;
+    bottom: calc(50% - 14px);
+}
+.post-overlay .post-comments{
+    left: 11.5rem;
 }
