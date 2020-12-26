@@ -136,7 +136,7 @@ main-container
     width: 6.5rem;
     position: absolute;
     background-repeat: no-repeat;
-    bottom: 17px;
+    bottom: 28px;
     left: calc(50% - 30px);;
 
 }
@@ -154,7 +154,7 @@ main-container
     height: 5.8rem;
     width: 6.5rem;
     background-repeat: no-repeat;
-    bottom: 16px;
+    bottom: 21px;
     left: calc(50% - 32px);
 }
 .video__electronic,
