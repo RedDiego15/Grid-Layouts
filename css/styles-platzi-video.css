@@ -32,7 +32,6 @@ html{
     width: 100%;
     min-width: 320px;
     height: 7rem;
-    margin-bottom: 1rem;
     background-color: var(--fondo-header);
 
 }
@@ -74,7 +73,7 @@ img{
 video section
 */
 .video-container video{
-    height: 45rem;
+    height: 43rem;
     width: 100%;
 }
 /*

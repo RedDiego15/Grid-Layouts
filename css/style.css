@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans',sans-serif;
+}
+:root{
+    /*COLORES*/
+    --color-fondo: #170000;
+}
+body{
+    background-color: var(--color-fondo);
+}
+.grid-container{
+    position:relative;
+    z-index: 1;
+    display: grid;
+    min-width: 50rem;
+    margin: auto;
+    gap:15rem;
+    width:100%
+    
+}
+.parallax-container{
+    position:relative;
+    z-index: 2;
+    width: 100%;
+    height: 150vh;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.background{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    width:100%;
+
+}
+.curtain-container{
+    position: absolute;
+    z-index: 3;
+    width:100%;
+    height:100%;
+}
+.parallax{
+    perspective:8px;
+    perspective-origin: 50%;
+}
+.curtain{
+    position:relative;
+    z-index:4;
+    background-image:url(../assets/curtain.png);
+    width:100%;
+    height: 150vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+.curtain__info {
+    z-index: 5;
+    width:100%;
+    display: grid;
+    gap:8rem;
+    justify-items: center;
+    transform: translateZ(5px) scale(0.375);
+    transform-origin: 50%;
+}
+.curtain__info h1{
+    color:white;
+    font-size: 4.5rem;
+    transform-origin: 0 50%;
+
+}
+.curtain__info .curtain-button {
+    width:15rem;
+    color:white;
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    border-radius:20px;
+    background-color: #220000;
+    transform-origin: 0 50%;
+    box-shadow: 2px 5px 14px 0px #550707;
+
+
+}
+.seats {
+    position:absolute;
+    z-index: 5;
+    background-image:url(../assets/seats.png);
+    height: 100vh;
+    transform:translateY(70%) translateZ(5px) scale(0.375);
+    transform-origin: top;
+    
+}
+.reproductor-container{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    padding:0 2rem;
+    min-width: 10rem;
+    height:48rem;
+    width:100%;
+}
+.curtains{
+    background-image:url(../assets/curtains.png);
+    height:180vh;
+    position: fixed;
+    transform: translateY(-5.5%);
+    z-index: 6;
+}
+video{
+    width:100%;
+    height:100%;
+   
+}
+
